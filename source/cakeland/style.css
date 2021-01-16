@@ -1,0 +1,274 @@
+body {
+  background-color: rgb(250, 226, 207);
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', 'Montserrat', sans-serif;
+  font-size: 15px;
+  color:rgb(65, 48, 48);
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}a:hover {
+    text-decoration: underline 1px wavy;
+}
+.page-header {
+    margin: 0;
+    padding: 30px;
+    padding-right: 40px;
+   display: grid;
+   grid-template-columns: 100px 3fr 1fr;
+   text-align: right;
+   background-color: rgb(65, 48, 48);
+   color: rgb(250, 226, 207)
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    
+}
+.hidden {
+    display: none;
+}
+.up-button {
+position: fixed;
+  z-index: 1;
+  padding: 0;
+  top: 75px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+  border: 5px solid;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  color: rgb(65, 48, 48);
+  background-color: rgb(250, 226, 207);
+  border-color: rgb(65, 48, 48);
+  outline-color: rgb(250, 226, 207);
+}
+.shown {
+    display: inline-block;
+  }
+/* форма */
+.open-button {
+  background-color: rgb(65, 48, 48);
+  color:rgb(250, 226, 207);
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: 1 px solid black;
+  border-radius: 24px;
+  cursor: pointer;
+ 
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.pop-up {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  
+}
+.form-container input[type=text] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid black;
+  background: #f1f1f1;
+}
+
+.form-container .cancel {
+  background-color: rgb(65, 48, 48);
+  color: rgb(250, 226, 207);
+  padding: 16px 20px;
+  border: 1 px solid black;
+  border-radius: 24px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: bold;
+}
+ 
+  
+  
+/* логотип */
+.logo {
+font-size: 40px;
+}
+/* карусель */
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: auto auto;
+    
+    text-align: center;
+    padding: 50px;
+    padding-top: 10px;
+    width: 1200px;
+    
+}
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+    
+    
+}
+.slider-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+   
+  }
+  .slider-item img {
+    object-fit: cover;
+    
+
+  }
+  .slider-control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+  }
+  .slider-control-show {
+    display: flex;
+  }
+  .slider-control:hover,
+  .slider-control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+  }
+  .slider-control-left {
+    left: 0;
+  }
+
+  .slider-control-right {
+    right: 0;
+  }
+
+  .slider-control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider-control-left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  .slider-control-right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+
+  .slider-item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+  }
+/* навигация по сайту */
+.navigation {
+display: flex;
+flex-direction: row-reverse;
+padding-right: 0;
+}
+.navigation li {
+    width: 1fr;
+    margin-right: 25px;
+      
+}
+/* высказывание */
+.phrase {
+    margin: 0;
+    padding: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    font-size: 70px;
+}
+/* каталог тортов */
+.catalog {
+    padding: 50px;
+    font-weight: 400;
+}
+.catalog h2 {
+margin: 0;
+padding: 50px;
+text-align: center;
+font-size: 30px;
+
+}
+.catalog-list {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+text-align: center;
+
+}
+
+/* Кнопка */
+.button {
+border: 1px solid rgb(65, 48, 48);
+border-radius: 10px;
+padding: 10px;
+position: relative;
+
+}
+
+/* Контакты */
+.contacts {
+    padding: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+a + p {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+/* футер */
+.page-footer {
+margin: 0;
+padding: 30px;
+padding-right: 40px;
+background-color: rgb(65, 48, 48);
+color: rgb(250, 226, 207);
+font-weight: bold;
+text-align: center;
+}
+
+

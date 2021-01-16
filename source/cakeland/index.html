@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Cakeland bakery</title>
+</head>
+<body>
+    <header class="page-header">
+      
+          <!-- логотипо-надпись -->
+        <a class="logo" href=#>Cakeland</a>
+        <!-- навигация -->
+        <ul class="navigation">
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="info.html">О нас</a></li>
+            
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+          <!-- контакты -->
+         <ul class="contact">
+             <li><a href="phoneto:79205556328">7 920 555 63 28</a></li>
+         </ul>
+      
+    </header>
+    <main>
+      
+      <h1>Новинки</h1>
+
+        <!-- фото макарунс -->
+        <div class="slider">
+          <div class="slider-wrapper">
+            <div class="slider-item">       
+               <img src="files/chelsea-audibert-hV1gChgMa-k-unsplash (1).jpg" alt="макароны" width="1200" height="600"> 
+            
+              </div> 
+
+             <div class="slider-item"> 
+                <img src="files/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg" alt="торт" width="1200" height="600">
+              </div>
+
+             <div class="slider-item"> 
+                <img src="files/m-w-vL6XDSdvmec-unsplash.jpg" alt="капкейки" width="1200" height="600">
+             </div>
+          </div>
+            <a class="slider-control slider-control-left" href="#" role="button"></a>
+            <a class="slider-control slider-control-right slider-control-show" href="#" role="button"></a>
+        </div>
+        
+    
+        
+        <!-- мотивирующая фраза -->
+        <section class="phrase">
+            <p>Вкуснее, чем в раю - только у нас!</p>
+        </section>
+        
+        <section class="catalog" id="catalog">
+            <h2 class="visually-hidden">Каталог тортиков</h2>
+                <ul class="catalog-list">
+
+                  <!-- Товар 1  Медовик-->
+                  <li class="catalog-item">
+                    <h3>
+                        <span class="catalog-category">Трехъярусный каприз<span>
+                      
+                    </h3>
+                    <p class="catalog-item-image">
+                         <img src="files/alexandra-gornago-_B7shfNUXEA-unsplash.jpg" alt="padding-left: 150px;" width="350px" height="500px">
+                      </a>
+                    </p>
+                    <p class="catalog-item-price">
+                    <b>2 700 Р/кг</b> 
+                  </p>   
+                  </li>
+                 
+                  <!-- Товар 2 -->
+                  <li class="catalog-item">
+                    <h3>
+                        <span class="catalog-category">Капкейки на заказ<span>
+                    
+                    </h3>
+                    <p class="catalog-item-image">
+                         <img src="files/atheer-alghamdi-YhJjDe-vEyw-unsplash.jpg" alt="Капкейки на заказ" width="350px" height="500px">
+                      </a>
+                    </p>
+                    <p class="catalog-item-price">
+                    <b>800 Р/6шт.</b> 
+                  </p>   
+                  </li>
+                
+                  <!-- Товар 3 -->
+                  <li class="catalog-item">
+                    <h3>
+                        <span class="catalog-category">Двухъярусная зима<span>
+                        
+                      </h3>
+                    <p class="catalog-item-image">
+                         <img src="files/david-holifield-QMGdy_Whc8I-unsplash.jpg" alt="Двухъярусная зима" width="350px" height="500px">
+                      </a>
+                    </p>
+                    <p class="catalog-item-price">
+                    <b>1 800 Р/кг</b> 
+                  </p>   
+                  </li>
+        
+                  <!-- Товар 4 -->
+                  <li class="catalog-item">
+                    <h3>
+                        <span class="catalog-category">Торт-безе<span>
+                    </h3>
+                    <p class="catalog-item-image">
+                         <img src="files/jordane-mathieu-gSx-ZKjESqk-unsplash.jpg" alt="Торт-безе" width="350px" height="500px">
+                      </a>
+                    </p>
+                    <p class="catalog-item-price">
+                    <b>1 500 Р/кг</b> 
+                    
+                  </p>   
+                  </li>
+        
+                  <!-- Товар 5 -->
+                  <li class="catalog-item">
+                    <h3>
+                        <span class="catalog-category">Наполеон<span>
+                    </h3>
+                    <p class="catalog-item-image">
+                         <img src="files/jordane-mathieu-X59-Zlyivh8-unsplash.jpg" alt="Наполеон" width="350px" height="500px">
+                      </a>
+                    </p>
+                    <p class="catalog-item-price">
+                    <b>1 600 Р/кг</b> 
+                  </p>   
+                  </li>
+        
+                  <!-- Товар 6 -->
+                  <li class="catalog-item">
+                    <h3>
+                        <span class="catalog-category">Прага<span>
+                    </h3>
+                    <p class="catalog-item-image">
+                         <img src="files/taylor-kiser-s7Vh1kg-clM-unsplash.jpg" alt="Сливочная вишня" width="350px" height="500px">
+                      </a>
+                    </p>
+                    <p class="catalog-item-price">
+                    <b>1 500 Р/кг</b> <br> <br>
+                    
+                  </p>   
+                  </li>
+
+                  <!-- форма -->
+                  <button class="open-button" onclick="openForm()">Оформить заказ</button>
+                  <div class="pop-up" id="myForm">
+                  <form action="file:///C:/Users/Ilya/YandexDisk/Programming/Arina/%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%20%D1%82%D0%BE%D1%80%D1%82%D0%BE%D0%B2/index.html#" method="post" class="form-container">
+                  <fieldset class="field">
+                    
+                    
+                      <label for="email">E-mail <input type="text" placeholder="Ваш е-мейл" name="email" id="email" required></label>
+                      <label for="address">Адрес доставки <input type="text" name="cake-name" id="address" required></label>
+                      <label for="date">Желаемое время доставки<input type="date" id="date"></label>
+                      <input type="submit" value="Оформить заказ">
+                      <button type="button" class="button cancel" onclick="closeForm()">Закрыть</button>
+                  
+                  </fieldset>
+                </form>
+                </div>
+                
+
+        
+                </ul>
+        </section>
+        <section class="contacts" id="contacts">
+          <a href="img/inst.svg" alt="Instagram"></a>
+          <a href="img/fb.svg" alt="Facebook"></a>
+          <p>Следите за нами в социальных сетях и <br> приходите в нашу пекарню на <br> Большой дворянской.</p>
+          <p>Санкт-Петербург, Большая дворянская 85 <br>
+            
+          Телефон +7 920 555 63 28</p>
+        </section>
+        <button class="up-button" type="button">
+          ↑
+          <span class="hidden">Наверх</span>
+    </main>
+    <footer class="page-footer">
+      <p>Сайт сделан в учебных целях. любые совпадения случайны. Фото взяты с <a href="https://unsplash.com/"> Unsplash </a></p>
+    </footer>
+    
+    <script src="gallery.js"></script> 
+    <script src="scroll.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
+

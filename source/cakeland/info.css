@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(250, 226, 207);
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', 'Montserrat', sans-serif;
+    font-size: 15px;
+    color:rgb(65, 48, 48);
+  }
+  li {
+      list-style-type: none;
+  }
+  a {
+      text-decoration: none;
+      color: inherit;
+  }a:hover {
+      text-decoration: underline 1px wavy;
+  }
+  .page-header {
+      margin: 0;
+      padding: 30px;
+      padding-right: 40px;
+     display: grid;
+     grid-template-columns: 100px 3fr 1fr;
+     text-align: right;
+     background-color: rgb(65, 48, 48);
+     color: rgb(250, 226, 207)
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px; }
+    /* логотип */
+.logo {
+    font-size: 40px;
+    }
+    /* навигация по сайту */
+.navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 0;
+    }
+.navigation li {
+    width: 1fr;
+    margin-right: 25px;
+          
+    }
+main {
+margin: 0;
+padding: 100px;
+padding-top: 30px;
+}
+/* о нас */
+
+.about {
+    padding: 30px;
+    text-indent: 40px;
+    float: right;
+    width: 800px;
+    text-align: justify;
+}
+.about1 {
+    padding-top: 30px;
+    float: left;
+    width: 500px;
+    text-indent: 40px;
+    text-align: justify;
+}
+.cake {
+    float: right;
+    width: 800px;
+    object-fit: cover;
+}
+.shelf {
+    float: left;
+    width: 500px;
+    object-fit: cover;
+}
+.cupcake {
+    float: right;
+    width: 800px;
+    object-fit: cover;
+}
+/* распорка */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    /* футер */
+.page-footer {
+    margin: 0;
+    padding: 30px;
+    padding-right: 40px;
+    background-color: rgb(65, 48, 48);
+    color: rgb(250, 226, 207);
+    font-weight: bold;
+    text-align: center;
+    }
+
+
+    
